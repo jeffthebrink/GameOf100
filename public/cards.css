@@ -1,9 +1,37 @@
 body {
     background-image: url("assets/cards/background_felt.png");
 }
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: 5px;
+}
+table th, table td {
+    padding: 1px; /* Apply cell padding */
+    text-align: center;
+}
 .card {
     height: 100px;
     width: 71px;
+}
+.clickable{
+    cursor: pointer;
+}
+.trump {
+    height: 120px;
+    width: auto;
+}
+.hearts {
+    content: url("assets/symbols/hearts.png");
+}
+.diamonds {
+    content: url("assets/symbols/diamonds.png");
+}
+.spades {
+    content: url("assets/symbols/spades.png");
+}
+.clubs {
+    content: url("assets/symbols/clubs.png");
 }
 .back {
     content: url("assets/cards/card_back.png");

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+    <body>
+        <div id="root">
+
+            <div :is="currentView">
+
+            </div>
+
+        </div>
+
+
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+        var Child = {
+            name: "child-temp",
+            template: "<h1>I'm a child!</h1>"
+        }
+
+        var OtherChild = {
+            name: "other-child",
+            template: "<h1>...And I'm the Other one!</h1>"
+        }
+
+        new Vue({
+            el: "#root",
+            data: {
+                currentView: "otherChild"
+            },
+            components: {
+                child: Child,
+                otherChild: OtherChild
+            }
+        });
+        </script>
+    </body>
+</html>
